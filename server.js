@@ -7,7 +7,7 @@ const port = 3000;
 // Serve static files from the "public" folder
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname));
-const serverAddress = 'wss://ball-bounce-game.onrender.com/';
+const serverAddress = 'wss://ball-bounce-ws.onrender.com/';  
 
 const ws = new WebSocket(serverAddress, {
     headers: {
