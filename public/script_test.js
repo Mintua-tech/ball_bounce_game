@@ -85,7 +85,7 @@ const canvas = document.getElementById('gameCanvas');
         });
 
 // WebSocket connection
-const ws = new WebSocket('wss://bouncing-ball-pro.glitch.me/');
+const ws = new WebSocket('wss://ball-bounce-game.onrender.com');
 ws.onmessage = (event) => {
     const { command } = JSON.parse(event.data);
     if (command === 'start') {if (!isGameRunning) {
